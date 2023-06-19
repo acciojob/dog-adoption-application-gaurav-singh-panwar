@@ -1,31 +1,40 @@
-body {
-  font-family: sans-serif;
-}
-
 form {
-  width: 500px;
-  margin: 0 auto;
-  padding: 10px;
-  border: 1px solid #ccc;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+  column-gap: 2rem;
+  padding: 2rem;
+  background-color: #f2f2f2;
+  border-radius: 10px;
 }
 
 label {
-  display: block;
+  font-weight: bold;
 }
 
-input {
+input[type="text"],
+select {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 0.5rem;
   border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
 }
 
-button {
-  background-color: #000;
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+button[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
   color: #fff;
-  padding: 10px;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
-  type="submit";
-  value="Submit";
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
 }
